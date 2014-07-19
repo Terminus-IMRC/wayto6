@@ -114,8 +114,7 @@ void make_index_of_baseof3()
 		index_of_baseof3[i]|=(index_t)1;
 		index_of_baseof3[i]<<=(baseof3[i].b3-baseof3[i].b2);
 		index_of_baseof3[i]|=(index_t)1;
-		//index_of_baseof3[i]<<=(sizeof(index_t)-baseof3[i].b3);
-		index_of_baseof3[i]<<=(64-baseof3[i].b3);
+		index_of_baseof3[i]<<=(sizeof(index_t)*8-baseof3[i].b3);
 	}
 
 	return;
