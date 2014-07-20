@@ -122,17 +122,22 @@ void make_index_of_baseof3()
 
 void output_baseof9_init()
 {
+#if 0
 	baseof9_out_fp=fopen("baseof9.txt", "w");
 	if(!baseof9_out_fp){
 		perror("fopen");
 		exit(EXIT_FAILURE);
 	}
+#else
+	baseof9_out_fp=stdout;
+#endif
 
 	return;
 }
 
 void output_baseof9_finalize()
 {
+#if 0
 	int e;
 
 	e=fclose(baseof9_out_fp);
@@ -140,6 +145,7 @@ void output_baseof9_finalize()
 		perror("fclose");
 		exit(EXIT_FAILURE);
 	}
+#endif
 
 	return;
 }
