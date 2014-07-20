@@ -188,8 +188,6 @@ int main()
 		index=(index_t)0;
 	}
 
-	printf("count: %llu\n", count);
-
 	output_baseof9_finalize();
 
 	return 0;
