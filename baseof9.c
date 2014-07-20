@@ -68,8 +68,6 @@ void read_baseof3_chain()
 
 	baseof3_chain->next=NULL;
 
-	printf("baseof3_count: %d\n", baseof3_count);
-
 	return;
 }
 
