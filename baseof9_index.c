@@ -30,7 +30,7 @@ int main()
 		exit(EXIT_FAILURE);
 	}
 
-	fdo=open(FDO_FILENAME, O_WRONLY|O_CREAT|O_TRUNC);
+	fdo=open(FDO_FILENAME, O_WRONLY|O_CREAT|O_TRUNC, S_IRUSR|S_IWUSR);
 	if(fdo==-1){
 		perror("open(fdo)");
 		exit(EXIT_FAILURE);
